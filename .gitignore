@@ -1,3 +1,6 @@
+# Ignore the raw data which is stored on zenodo.
+train_test_data_immunogenicity_0.0.1/
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
