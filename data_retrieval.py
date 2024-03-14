@@ -5,8 +5,8 @@ import tarfile
 
 
 def main():
-    url = "https://zenodo.org/records/10562968/files/train_test_data_immunogenicity_0.0.1.tar.gz"
-    if "train_test_data_immunogenicity_0.0.1.tar.gz" not in os.listdir():
+    url = "https://zenodo.org/records/10562968/files/train_test_data_immunogenicity_0.0.2.tar.gz"
+    if "train_test_data_immunogenicity_0.0.2.tar.gz" not in os.listdir():
         filename = wget.download(url)
         tf = tarfile.open(filename)
         tf.extractall()

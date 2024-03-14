@@ -1,5 +1,9 @@
 # Ignore the raw data which is stored on zenodo.
 train_test_data_immunogenicity_0.0.1/
+train_test_data_immunogenicity_0.0.2/
+
+*.fasta
+*.tar.gz
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
