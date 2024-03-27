@@ -1,16 +1,15 @@
 """Retrieves train-test data and organizes it appropriately."""
 import os
-import wget
 import tarfile
+import wget
 
 
 def main():
-    url = "https://zenodo.org/records/10819061/files/train_test_data_immunogenicity_0.0.2.tar.gz"
-    if "train_test_data_immunogenicity_0.0.2.tar.gz" not in os.listdir():
+    url = "https://zenodo.org/records/10864595/files/train_test_data_immunogenicity_0.0.3.tar.gz"
+    if "train_test_data_immunogenicity_0.0.3.tar.gz" not in os.listdir():
         filename = wget.download(url)
-        tf = tarfile.open(filename)
-        tf.extractall()
-        tf.close()
+        with tarfile.open(filename) as tf:
+            tf.extractall()
         os.remove(filename)
 
 

@@ -1,6 +1,7 @@
 # Ignore the raw data which is stored on zenodo.
 train_test_data_immunogenicity_0.0.1/
 train_test_data_immunogenicity_0.0.2/
+train_test_data_immunogenicity_0.0.3/
 
 *.fasta
 *.tar.gz
